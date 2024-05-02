@@ -13,7 +13,7 @@ public class Main {
         System.out.println(sum2.add(3, 5));
 
         Sum sum3 = (x, y) -> {
-            System.out.println("Addig...");
+            System.out.println("Adding...");
             return x + y;
         };
         System.out.println(sum3.add(3, 5));
