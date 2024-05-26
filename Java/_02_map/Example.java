@@ -1,7 +1,6 @@
 package _02_map;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Example {
     public static void main(String[] args) {
@@ -9,7 +8,7 @@ public class Example {
 
         List<Double> temperatures_kelvin = temperatures_celsius.stream()
                                             .map(c -> c + 273.15)
-                                            .collect(Collectors.toList());
+                                            .toList();
 
         System.out.println(temperatures_kelvin);
     }

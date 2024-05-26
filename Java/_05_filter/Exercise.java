@@ -1,10 +1,10 @@
 package _05_filter;
 
 // Gib mithilfe einer Lambda Funktion in Europa gemessene Temperaturen aus
+// (in Java wird mit string1.equals("Europe") verglichen, nicht mit ==)
 
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Exercise {
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Exercise {
 
         List<Map.Entry<String, Integer>> europe_temperatures = temperatures_continents.stream()
                 .filter(entry -> entry.getKey().equals("Europe"))
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println(europe_temperatures);
     }
